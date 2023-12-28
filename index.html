@@ -205,7 +205,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     // Fetch genres from your API endpoint
-    fetch('https://localhost:7074/api/Recomend/getGenres')
+    fetch('https://recommendationsystemapi20231227214431.azurewebsites.net/api/Recomend/getGenres')
       .then(response => response.json())
       .then(genres => {
         const genreSelect = document.getElementById('filter-genre');
@@ -247,7 +247,7 @@
   // Perform AJAX request
   $.ajax({
     type: 'POST',
-    url: 'https://localhost:7074/api/Recomend/getRecomendations', // Replace with your API endpoint
+    url: 'https://recommendationsystemapi20231227214431.azurewebsites.net/api/Recomend/getRecomendations', // Replace with your API endpoint
     data: JSON.stringify(formData),
     contentType: 'application/json',
     success: function (data) {
